@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root{
+    --primarycolor:wheat;
+    --secondarycolor:rgb(6, 6, 39);
+    accent-color: #111;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: wheat;
+    text-decoration: none;
+    /* background-color:rgba(5, 5, 5, 0.99); */
+
+}
+body{
+    background-color:rgba(5, 5, 5, 0.99);
+}
+.name{
+
+        font-family: "Borel", cursive;
+        font-style:italic;
+        font-size: xx-large;
+        background-image: linear-gradient(25deg, #ff0000, #ecc100,rgb(0, 255, 170)); -webkit-background-clip: text; color: transparent;
+}
+.name{
+    margin-left: 80px;
+    padding-top:30px; ;
+    
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: cover ;
+    height: 2.9rem;
+    margin-top: 5px; 
+    margin-right: 30px;
+    background-color: #000000;
+    /* box-shadow: 2px 2px 2px 10px rgba(29, 211, 135, 0.281); */
+
+    
+  
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+
+  
+}
+
+nav a{
+ color: wheat;
+ text-decoration: none;
+}
+nav a:hover{
+ color: #fff2f2;
+}
+
+nav ul li a::after,nav ul li a::after{
+    content: "";
+    display: block;
+    width:0;
+    height: 2px;
+    color: wheat;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.resume{
+    text-decoration: none;
+    color: white;
+    margin-right:15px ;
+    font-weight: 400;
+
+}
+.resume{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: white;
+    background-image: linear-gradient(45deg,#ff0000,#c430d7);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.home-page{
+    margin-top:70px ;
+    color: white;
+    height: 77vh;
+        padding: 10px 10%;
+            background-image: url(./assets/OIP\ \(1\).jfif);
+            background-repeat: none;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+}
+.home-page{
+    margin-right: 30px;
+    padding-left: 80px;
+}
+
+.title{
+    font-size: 5rem;
+    
+    animation:move 0.5s linear forwards;
+    }
+
+
+    .para {
+        margin: 40px 0 30px;
+        color: white;
+        animation-delay: 0.5s;
+        font-size: 1.5rem;
+        width: 70%;
+    }
+    .para .resume{
+        padding: 15px 80px;
+        font-size: 15px;
+        animation-delay: 1s;
+    }
+    .resume:hover{
+        border-top-right-radius:30px ;
+    }
+
+    .resume{
+        opacity: 4;
+        transform: translateY(30px);
+        animation:move 0.5s linear forwards;
+    }
+
+    .pr-img{
+        position: absolute;
+        z-index: 1;
+        left: 60rem;
+        top:10rem;
+    }
+    .pr-img img{
+        border-radius: 50%;
+        width: 70%;
+        box-shadow: 2px 2px 2px 2px rgba(255, 0, 55, 0.466);
+    
+    }
+ 
+    
+    .social-icon {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        z-index: 1000;
+        border: 1px solid white;
+        border-radius: 5px;
+
+       
+    }
+    
+    .social-icon ul {
+        padding: initial;
+        position: sticky;
+       
+    }
+    
+    .social-icon ul li {
+        width: 40px;
+        height: 35px;
+        list-style-type: none;
+        padding-left: 12px;
+        padding-top: 6px;
+        margin-top: 5px;
+        transition: transform 0.3s ease;
+  
+    }
+    
+   
+
+
+    .li i{
+
+        border-radius: 25px;
+        color: #fff;
+    }
+    .li :hover{
+        transform: scale(1.5);
+        color: #fff;
+     border-radius: 50%;
+   
+ 
+    }
+
+    .gt i{
+        border-radius: 25px;
+        color: #fff;
+  
+    }
+    .twt i{
+        border-radius: 25px;
+        color: #fff;
+    }
+    .gt i:hover{
+        border-radius: 25px;
+        transform: scale(1.5);
+    }
+    .twt i:hover{
+        color: white;
+        border-radius: 25px;
+        transform: scale(1.5);
+    }
+
+    #habout{
+        margin-left:85px;
+        font-family: "Borel", cursive;
+        font-style:italic;
+        color: wheat;
+font-size: 40px;
+
+    }
+
+.About{
+    margin-left:80px;
+        position: relative;
+        z-index: 1;
+        right: 6rem;
+        height: 40rem;
+       
+          
+    }
+    .About img{
+        margin-left:80px;
+        position: absolute;
+        width: 70%;
+        box-shadow: 2px 2px 2px rgba(255, 0, 0, 0.466);
+        margin-top: 20px;
+        height: 450px;
+        width: 400px;
+    }
+   .content{
+    padding-top: 40px;
+position: absolute;
+margin-left: 600px;
+}
+
+    .content p{
+
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+    
+    
+    }
+
+    .content a{
+        margin-left: 13rem;
+    }
+
+
+    
+.container {
+    
+    margin: 50px auto;
+    text-align: center;
+    border: 2px solid rgba(61, 58, 52, 0.411);
+    box-shadow: 2px 2px 10px 10px rgba(252, 6, 67, 0.623);
+    margin-left:80px;
+    margin-right: 80px;
+    height: auto;
+        grid-gap: 20px; 
+}
+
+.progress-bar{
+ background-color: goldenrod;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.img {
+    display: inline-block;
+    width: 50px; /* Adjust according to your image size */
+    vertical-align: middle;
+}
+
+.img img {
+    max-width: 100%;
+}
+
+.skill p {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.progress {
+    display: inline-block;
+    width: calc(100% - 60px); /* Adjust according to your image and margin */
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.progress-bar {
+    height: 20px;
+}
+
+.msg-part{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+   border: 1px solid white;
+    margin-top: 50px;  
+    margin-bottom: 40px;
+    float: inline-start;
+    margin-left: 60px;
+    position: relative;
+    box-shadow: 2px 2px 10px 10px rgba(252, 6, 68, 0.281);
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRYw8LQzFUQOcsxXoHJPUosc2hEulyBGd9U8c8ezHcSyJPt6I1lKJrWn-qpbv6aTWRikI&usqp=CAU');
+    opacity: 90;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      */
+}
+.msg-part form{
+    margin-bottom: 40px;
+}
+.explain{ 
+    position:absolute;
+   
+    margin-left: 380px;
+    margin-top: 40px;
+    width: 900px;
+   
+
+    
+
+}
+
+.explain p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.personal-info ul li {
+    display: block;
+    line-height: 3;
+    
+}

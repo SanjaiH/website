@@ -1,0 +1,87 @@
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    line-height: 2.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  
+  /*----- NOT REQUIRED ENDS ----*/
+  .skills .circle-progress {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin-bottom: 10px;
+    background-color: black;
+    /* Space For the counter */
+  }
+  
+  .skills .circle-progress .gradient, .circle-progress img, .circle-progress .track, .circle-progress .indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: black;
+  }
+  
+  .skills .circle-progress .gradient {
+    opacity: 0;
+    /* Hide it visually if the data-percent is 0 or less and on initial load */
+    width: 100%;
+    height: 100%;
+    background-image: conic-gradient(from 0deg, #ee324b, #F66026, #F3B407, #6FD913, #29B40F);
+    /* background-color: aqua; */
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    pointer-events: none;
+  
+    /* Allow pointer events to go through */
+  }
+  
+  .skills .circle-progress .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    display: none;
+    /* Initially hide the indicator */
+  }
+  
+  .skills .circle-progress img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    border: 0.5rem solid #130e0e;
+    /* background-color: #fff; */
+    z-index: 2;
+  }
+  
+  .skills .circle-progress .track {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    mask-image: radial-gradient(circle at center, transparent 0, transparent 56%, black 57%);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    z-index: 0;
+  }
+  
+  .skills .counter {
+    position: absolute;
+    left: 50%;
+    top: 4%;
+    bottom: -30px;
+    /* Space according to margin in Parent */
+    transform: translateX(-50%);
+  }
